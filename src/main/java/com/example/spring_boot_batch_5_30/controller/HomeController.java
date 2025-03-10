@@ -31,12 +31,8 @@ public class HomeController
     {
         System.out.println("inside testStudents");
         List<Student> studentList = new ArrayList<>();
-        Student student1 = new Student(101,"vikash","java");
-        Student student2 = new Student(102,"abhishek","salesforce");
-        Student student3 = new Student(102,"yogesh","java");
+        Student student1 = new Student(101L,"vikash","java", "vikash@gmail.com");
         studentList.add(student1);
-        studentList.add(student2);
-        studentList.add(student3);
         return studentList;
     }
 

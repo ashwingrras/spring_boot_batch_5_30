@@ -1,5 +1,7 @@
 package com.example.spring_boot_batch_5_30.model;
 
+import com.example.spring_boot_batch_5_30.validator.EmailValidator;
+import com.example.spring_boot_batch_5_30.validator.ValidEmail;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

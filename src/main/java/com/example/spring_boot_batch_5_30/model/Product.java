@@ -1,9 +1,11 @@
 package com.example.spring_boot_batch_5_30.model;
 
+import com.example.spring_boot_batch_5_30.validator.PhoneNumberValidator;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Null;
 import jakarta.validation.constraints.Size;
 
 @Entity
