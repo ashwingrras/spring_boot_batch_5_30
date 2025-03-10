@@ -16,6 +16,8 @@ Validation Annotations:
 @AssertTrue/@AssertFalse: Ensures a boolean value is true or false, respectively.
 @NotNull: Ensures that the field is not null.
 
++91 9799605400
+
  */
 
 @Entity
@@ -24,7 +26,6 @@ public class Employee {
 
     @Id
     private Long id;
-
     @NotNull(message = "Name cannot be null")
     @Size(min = 2, max = 30, message = "Name must be between 2 and 30 characters")
     private String name;

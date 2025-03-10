@@ -16,7 +16,7 @@ public class PhoneNumberValidator implements ConstraintValidator<ValidPhoneNumbe
     public boolean isValid(String value, ConstraintValidatorContext context) {
         // If value is null or empty, return true (or handle as needed)
         if (value == null || value.isEmpty()) {
-            return true; // Optional: return false if empty strings should be invalid
+            return false; // Optional: return false if empty strings should be invalid
         }
 
         // Custom validation logic for phone number (e.g., checking a regex)
