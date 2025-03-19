@@ -8,10 +8,10 @@ import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/student")
@@ -28,4 +28,13 @@ public class StudentController
         return studentService.createStudent(student);
     }
 
+    @GetMapping("/students")
+    public List<Student> getStudents()
+    {
+        System.out.println("inside testStudents");
+        List<Student> studentList = new ArrayList<>();
+        Student student1 = new Student(101L,"vikash","java", "vikash@gmail.com");
+        studentList.add(student1);
+        return studentService.fetchStudentList();
+    }
 }

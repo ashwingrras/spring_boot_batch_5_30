@@ -21,7 +21,6 @@ public class Student
     String course;
     @NotNull(message = "Email is required")
     @Email(message = emailFailedMsg)
-    @ValidEmail()
     String email;
 
     public Student(Long id, String name, String course, String email)

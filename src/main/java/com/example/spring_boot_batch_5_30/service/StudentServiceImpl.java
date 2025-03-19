@@ -15,7 +15,7 @@ public class StudentServiceImpl implements StudentService{
 
     @Override
     public List<Student> fetchStudentList() {
-        return null;
+        return studentRepository.findAll();
     }
 
     @Override
