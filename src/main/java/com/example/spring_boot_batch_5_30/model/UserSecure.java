@@ -19,7 +19,7 @@ public class UserSecure implements UserDetails {
     private String username;
 
     @Column(nullable = false)
-    private String password;
+    private String passwords;
 
     @Column(nullable = false)
     private String role;
@@ -34,7 +34,7 @@ public class UserSecure implements UserDetails {
 
     @Override
     public String getPassword() {
-        return password;
+        return passwords;
     }
 
     @Override

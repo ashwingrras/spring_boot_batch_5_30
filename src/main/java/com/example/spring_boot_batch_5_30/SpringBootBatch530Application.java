@@ -15,10 +15,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 		Basic Auth
 		Form Based / Http
 		Token Based
-	8. AOP: Before, after
-	9. Actuator: Logging and health monitor
-	10. Spring Test
-	11. MongoDB
+	8. MongoDB
+	9. AOP: Before, after
+	10. Actuator: Logging and health monitor
+	11. Spring Test
 
 
  */

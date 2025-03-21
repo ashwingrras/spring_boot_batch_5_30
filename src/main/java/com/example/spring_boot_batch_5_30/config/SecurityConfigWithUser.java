@@ -23,6 +23,7 @@ public class SecurityConfigWithUser {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        System.out.println("inside securityFilterChain");
         http
                 .authorizeHttpRequests((requests) -> requests
                         .requestMatchers("/home").permitAll()
@@ -46,6 +47,7 @@ public class SecurityConfigWithUser {
 
     @Bean
     public PasswordEncoder passwordEncoder() {
+        System.out.println("inside passwordEncoder");
         return new BCryptPasswordEncoder();
     }
 }
